@@ -84,7 +84,7 @@ portal access at url: [`localhost:8080`](http://127.0.0.1:8080/)
 
 ## Contributors
 
-- [Pamela Augustine (Team Lead | Developer)]:smile_cat: `v1`
+- [Pamela Augustine (Team Lead | Developer)] `v1`
 
 ## Product Owner
 
