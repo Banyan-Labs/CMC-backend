@@ -1,4 +1,4 @@
-# Time Tracking App *-backend* `v1.0`
+# Company Monthly Calendar *-backend* `v1.0`
 
 ## Table of Contents
 
@@ -36,7 +36,7 @@ TBD
 
 For development first you'll need to clone the repo. On your local machine open a terminal in to desired file path location and run command
 
-### `git clone https://github.com/Banyan-Labs/TTAB-backend.git`
+### `git clone https://github.com/Banyan-Labs/CMC-backend.git`
 
 Next you'll need to install the node modules, but first you'll need to switch from the default branch `main` to `dev` to have the most current development environment run command
 
@@ -70,13 +70,6 @@ Server will default to port `8080` - to change port create `.env` file and assig
 
 portal access at url: [`localhost:8080`](http://127.0.0.1:8080/)
 
-### Deployed Development Access
-
-This application does have continuos deployment from `main` branch on Heroku
-
-url: [`https://tta-backend.herokuapp.com/`](https://tta-backend.herokuapp.com/)
-
----
 
 > :sunglasses: **Keep Clam and `C0D3` on.** _Hack the Planet!_ :earth_americas:
 
@@ -91,7 +84,7 @@ url: [`https://tta-backend.herokuapp.com/`](https://tta-backend.herokuapp.com/)
 
 ## Contributors
 
-- [Josh McLain (Team Lead | DevOps | Developer)](https://jmclain-banyan.github.io/) :smile_cat: `v1` *-Author*
+- [Pamela Augustine (Team Lead | Developer)] `v1`
 
 ## Product Owner
 
