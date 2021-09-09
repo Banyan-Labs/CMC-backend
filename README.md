@@ -1,4 +1,4 @@
-# Time Tracking App *-backend* `v1.0`
+# Company Monthly Calendar *-backend* `v1.0`
 
 ## Table of Contents
 
