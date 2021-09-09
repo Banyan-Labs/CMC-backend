@@ -1,9 +1,9 @@
 {
-  "name": "TTAB-backend",
+  "name": "CMC-backend",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Banyan-Labs/TTAB-backend.git",
-  "author": "Josh McLain <joshmclain45@gmail.com>",
+  "repository": "https://github.com/Banyan-Labs/CMC-backend.git",
+  "author": "Pamela Augustine <pamela.augustine10@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
