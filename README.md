@@ -70,6 +70,10 @@ Server will default to port `8080` - to change port create `.env` file and assig
 
 portal access at url: [`localhost:8080`](http://127.0.0.1:8080/)
 
+### Deployed Development Access
+This application does have continuos deployment from main branch on Heroku
+
+url: https://banyan-cmc-backend.herokuapp.com/
 
 > :sunglasses: **Keep Clam and `C0D3` on.** _Hack the Planet!_ :earth_americas:
 
