@@ -120,7 +120,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 #### v1.0 August 26th, 2021
 
-Basic boiler plate setup to branch development from. Continuous deployment setup through [Heroku](https://tta-backend.herokuapp.com/)
+Basic boiler plate setup to branch development from. Continuous deployment setup through [Heroku](https://banyan-cmc-backend.herokuapp.com/)
 
 ---
 
