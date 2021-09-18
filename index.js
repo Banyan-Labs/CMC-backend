@@ -10,11 +10,12 @@ const TestModel = require("./models/TestModel");
 const apiRoutes = require("./routes/test");
 
 app.use(express.json());
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
 
 apiRoutes(app);
 
-mongoose.connect(process.env.DB, {
+const connectionString = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@banyan-cmc.mtcmm.mongodb.net/montlyCalendar`;
+mongoose.connect(connectionString, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
