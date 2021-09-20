@@ -5,7 +5,7 @@ const cors = require("cors");
 app.use(cors());
 require("dotenv").config();
 const mongoose = require("mongoose");
-const TestModel = require("./models/TestModel");
+
 
 const apiRoutes = require("./routes/test");
 
@@ -30,19 +30,7 @@ app.get("/api", (req, res) => {
   });
 });
 
-app.post("/api/test/post", async (req, res) => {
-  //console.log(req.body);
-  const newTestPost = new TestModel({
-    test: req.body.test,
-  });
-
-  try {
-    const NewTest = await newTestPost.save();
-    res.status(201).json(NewTest);
-  } catch (err) {
-    res.status(400).json({ message: err.message });
-  }
-});
+//Example POST request
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`app running on port... ${PORT}`));
