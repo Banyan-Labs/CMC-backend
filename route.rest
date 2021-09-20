@@ -1,7 +1,7 @@
-POST http://localhost:8080/api/test/post
+POST http://localhost:8080/api/test
 Content-Type: application/json
 
 {
-    "test": "CMC Stand Up"
+    "test": "CMC-23"
     
 }
