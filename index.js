@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 
 apiRoutes(app);
 
-const connectionString = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@banyan-cmc.mtcmm.mongodb.net/montlyCalendar`;
+const connectionString = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}${process.env.DB_CONNSTRING}`;
 mongoose.connect(connectionString, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -31,7 +31,7 @@ app.get("/api", (req, res) => {
 });
 
 app.post("/api/test/post", async (req, res) => {
-  console.log(req.body);
+  //console.log(req.body);
   const newTestPost = new TestModel({
     test: req.body.test,
   });
