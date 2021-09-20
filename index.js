@@ -1,12 +1,19 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+require('dotenv').config()
 const mongoose = require("mongoose");
 app.use(cors());
 
 const apiRoutes = require("./routes/test");
 
 apiRoutes(app);
+
+const connectionString = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}${process.env.DB_CONNSTRING}`;
+mongoose.connect(connectionString, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 app.get("/", (req, res) => {
   res.sendFile(`${__dirname}/index.html`);
