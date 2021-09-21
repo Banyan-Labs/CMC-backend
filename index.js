@@ -6,8 +6,10 @@ app.use(cors());
 
 const apiRoutes = require("./routes/test");
 
-apiRoutes(app);
+const apiMonth = require("./routes/month")
 
+apiRoutes(app);
+apiMonth(app);
 app.get("/", (req, res) => {
   res.sendFile(`${__dirname}/index.html`);
 });
