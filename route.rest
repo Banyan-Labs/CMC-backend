@@ -5,3 +5,13 @@ Content-Type: application/json
     "test": "CMC-23"
     
 }
+
+###
+
+POST http://localhost:8080/routes/api/months.js
+Content-Type: application/json
+
+{
+    "month": "September"
+    
+}

@@ -10,12 +10,14 @@ app.use(cors());
 
 const apiRoutes = require("./routes/test");
 const apiLogin = require("./routes/login/login");
+const apiNewMonth = require("./routes/newMonth/newMonth");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 apiRoutes(app);
 apiLogin(app);
+apiNewMonth(app);
 
 const connectionString = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}${process.env.DB_CONNSTRING}`;
 mongoose.connect(connectionString, {
