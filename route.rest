@@ -1,0 +1,25 @@
+POST http://localhost:8080/api/test
+Content-Type: application/json
+
+{
+    "test": "route test"
+    
+}
+
+###
+POST http://localhost:8080/api/months
+Content-Type: application/json
+
+{
+    "months": "april"
+    
+}
+
+###
+
+GET http://localhost:8080/api/months
+Content-Type: application/json
+
+{
+    "months": "Previous Months test"
+}
