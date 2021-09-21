@@ -1,4 +1,4 @@
-const LoginModel = require("../models/LoginModel");
+const LoginModel = require("../../models/LoginModel");
 
 module.exports = (app) => {
   app.get("/api/test/login", (req, res) => {
@@ -8,17 +8,21 @@ module.exports = (app) => {
   });
   app.post("/api/test/login", async (req, res) => {
     //console.log(req.body);
-    const newLoginPost = new LoginModel({
-      test: req.body.test,
-    });
-  
-    try {
-      const NewLogin = await newLoginPost.save();
-      res.status(201).json(NewLogin);
-    } catch (err) {
-      res.status(400).json({ message: err.message });
+
+    const { email, password } = req.body;
+    if (!email || !password) {
+      return res.status(400).json({ message: "empty fields" });
+    } else {
+      const newLoginPost = new LoginModel({
+        email: req.body.email,
+        password: req.body.password,
+      });
+      try {
+        const NewLogin = await newLoginPost.save();
+        res.status(201).json(NewLogin);
+      } catch (err) {
+        res.status(400).json({ message: err.message });
+      }
     }
   });
-  
-  
 };
