@@ -2,9 +2,11 @@ const express = require("express");
 const app = express();
 const router = express.Router();
 const cors = require("cors");
+const mongoose = require("mongoose");
 app.use(cors());
 require("dotenv").config();
-const mongoose = require("mongoose");
+
+
 
 
 const apiRoutes = require("./routes/test");
@@ -12,6 +14,7 @@ const apiPreviousMonth = require("./routes/months");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
 
 apiRoutes(app);
 apiPreviousMonth(app);
@@ -26,6 +29,7 @@ app.get("/", (req, res) => {
   res.sendFile(`${__dirname}/index.html`);
 });
 
+
 app.get("/api", (req, res) => {
   res.json({
     message: "if you're seeing this message the api server is running",
@@ -33,6 +37,7 @@ app.get("/api", (req, res) => {
 });
 
 //Example POST request
+
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`app running on port... ${PORT}`));
