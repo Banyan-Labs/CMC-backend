@@ -8,11 +8,13 @@ const mongoose = require("mongoose");
 
 
 const apiRoutes = require("./routes/test");
+const apiPreviousMonth = require("./routes/months");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 apiRoutes(app);
+apiPreviousMonth(app);
 
 const connectionString = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}${process.env.DB_CONNSTRING}`;
 mongoose.connect(connectionString, {
