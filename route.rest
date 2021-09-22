@@ -3,6 +3,7 @@ Content-Type: application/json
 
 {
     "test": "CMC-23"
+    "test": "route test"
     
 }
 
@@ -13,5 +14,22 @@ Content-Type: application/json
 
 {
     "month": "September"
+}
+
+###
+POST http://localhost:8080/api/months
+Content-Type: application/json
+
+{
+    "months": "april"
     
+}
+
+###
+
+GET http://localhost:8080/api/months
+Content-Type: application/json
+
+{
+    "months": "Previous Months test"
 }
