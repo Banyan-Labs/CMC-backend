@@ -33,3 +33,20 @@ Content-Type: application/json
 {
     "months": "Previous Months test"
 }
+
+###
+POST http://localhost:8080/routes/api/months
+Content-Type: application/json
+
+{
+    "month": "August"
+}
+
+###
+POST http://localhost:8080/api/test/login
+Content-Type: application/json
+
+{
+    "email": "test@email.com",
+    "password": "12345"
+}

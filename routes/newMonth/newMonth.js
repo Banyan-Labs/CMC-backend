@@ -1,12 +1,12 @@
 const NewMonthModel = require("../../models/NewMonthModel");
 
 module.exports = (app) => {
-  app.get("/routes/api/months.js", (req, res) => {
+  app.get("/routes/api/months", (req, res) => {
     res.json({
       message: "test success",
     });
   });
-  app.post("/routes/api/months.js", async (req, res) => {
+  app.post("/routes/api/months", async (req, res) => {
         const newMonthPost = new NewMonthModel({
           month: req.body.month,
         });
