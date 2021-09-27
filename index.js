@@ -8,18 +8,17 @@ app.use(cors());
 ;
 
 
-const apiRoutes = require("./routes/test");
+
 const apiLogin = require("./routes/login/login");
 const apiNewMonth = require("./routes/newMonth/newMonth");
-const apiPreviousMonth = require("./routes/months");
-
+// const apiPreviousMonth = require("./routes/months");
+const monthlyCall = require('./routes/months')
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-apiRoutes(app);
 apiLogin(app);
 apiNewMonth(app);
-apiPreviousMonth(app);
+monthlyCall(app);
 
 const connectionString = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}${process.env.DB_CONNSTRING}`;
 mongoose.connect(connectionString, {
