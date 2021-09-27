@@ -9,7 +9,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/routes/api/months.js
+POST http://localhost:8080/routes/api/months
 Content-Type: application/json
 
 {
