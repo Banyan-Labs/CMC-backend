@@ -22,18 +22,18 @@ Content-Type: application/json
 
 {
 "month": "October",
-"introductions": [{
+"introductions": {
     "name": "Austin",
     "introDescription": "COO",
-    "image": ""
-}],
-"trainings": [{
+    "introImage": ""
+},
+"trainings": {
     "trainingTitle": "Mindfulness",
     "presenter": "Julie Landers",
     "trainingDescription": "a training on mindfulness",
     "role": "re-entry mananger"
-}]
-    
+},
+"otherNotes": "This is finally working"   
 }
 
 ###

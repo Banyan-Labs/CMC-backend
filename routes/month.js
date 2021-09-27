@@ -14,16 +14,17 @@ app.post("/api/month", async (req, res) => {
     const MonthlyCall = new MonthlyCallModel({
       month: req.body.month,
       introductions: [{
-        name: req.body.name,
-        description: req.body.description,
-        image: req.body.introImage
+        name: req.body.introductions.name,
+        introDescription: req.body.introductions.introDescription,
+        introImage: req.body.introductions.introImage
       }],
       trainings: [{
-        trainingTitle: req.body.trainingTitle,
-        presenter: req.body.presenter,
-        trainingDescription: req.body.trainingDescription,
-        role: req.body.role
-      }]
+        trainingTitle: req.body.trainings.trainingTitle,
+        presenter: req.body.trainings.presenter,
+        trainingDescription: req.body.trainings.trainingDescription,
+        role: req.body.trainings.role
+      }],
+      otherNotes: req.body.otherNotes
     });
   
     try {

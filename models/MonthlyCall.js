@@ -7,7 +7,7 @@ let MonthlyCallSchema = new Schema({
     {
       name: String,
       introDescription: String,
-      image: String,
+      introImage: String,
     },
   ],
   trainings: [
@@ -18,6 +18,7 @@ let MonthlyCallSchema = new Schema({
       role: String,
     },
   ],
+  otherNotes: String
 });
 
 const MonthlyCallModel = mongoose.model("monthlyCall", MonthlyCallSchema);
