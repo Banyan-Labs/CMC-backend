@@ -2,7 +2,7 @@ const MonthlyCallModel = require("../models/MonthlyCall");
 
 module.exports = (app) => {
   //GET route to return ALL months
-app.get('/', (req, res) => {
+app.get('/api/month', (req, res) => {
   try {
     MonthlyCallModel.find({}, (err, month) => {
       res.status(201).json(month)
