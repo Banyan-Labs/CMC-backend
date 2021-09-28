@@ -22,6 +22,7 @@ Content-Type: application/json
 
 {
 "month": "October",
+"year": 2021,
 "introductions": {
     "name": "Austin",
     "introDescription": "COO",
