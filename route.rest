@@ -38,11 +38,11 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8080/api/months
+GET http://localhost:8080/
 Content-Type: application/json
 
 {
-    "months": "Previous Months test"
+    
 }
 
 ###
