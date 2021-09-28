@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 let MonthlyCallSchema = new Schema({
   month: String,
+  year: Number,
   introductions: [
     {
       name: String,

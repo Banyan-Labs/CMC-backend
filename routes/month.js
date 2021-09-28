@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
 
     const MonthlyCall = new MonthlyCallModel({
       month: req.body.month,
+      year: req.body.year,
       introductions: [
         {
           name: req.body.introductions.name,
