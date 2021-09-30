@@ -39,7 +39,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8080/
+GET http://localhost:8080/api/month
 Content-Type: application/json
 
 {
@@ -96,4 +96,18 @@ Content-Type: application/json
 
 {
     "months": "april"
+}
+
+###
+POST http://localhost:8080/api/month
+Content-Type: application/json
+
+{
+   "month": "January",
+   "year": 2021,
+   "introductions": {
+    "name": "Shandea Hardin",
+    "introDescription": "I hope this works",
+    "introImage": ""
+   }
 }

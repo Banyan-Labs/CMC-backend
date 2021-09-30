@@ -32,6 +32,7 @@ app.get('/api/month', (req, res) => {
           presenter: req.body.trainings.presenter,
           trainingDescription: req.body.trainings.trainingDescription,
           role: req.body.trainings.role,
+          trainingImage: req.body.trainings.trainingImage,
         },
       ],
       otherNotes: req.body.otherNotes,
