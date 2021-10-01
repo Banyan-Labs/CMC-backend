@@ -16,7 +16,8 @@ let MonthlyCallSchema = new Schema({
       trainingTitle: String,
       presenter: String,
       trainingDescription: String,
-      role: String
+      role: String,
+      trainingImage: String,
     },
   ],
   otherNotes: String

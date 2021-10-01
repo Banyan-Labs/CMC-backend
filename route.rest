@@ -62,3 +62,52 @@ Content-Type: application/json
     "email": "test@email.com",
     "password": "12345"
 }
+
+###
+POST http://localhost:8080/routes/api/months
+Content-Type: application/json
+
+{
+    "month": "October"
+}
+
+###
+
+GET http://localhost:8080/api/months
+Content-Type: application/json
+
+{
+    "months": "August"
+}
+
+###
+POST http://localhost:8080/api/months
+Content-Type: application/json
+
+{
+    "months": "april"
+    
+}
+
+###
+
+GET http://localhost:8080/api/months
+Content-Type: application/json
+
+{
+    "months": "april"
+}
+
+###
+POST http://localhost:8080/api/month
+Content-Type: application/json
+
+{
+   "month": "January",
+   "year": 2021,
+   "introductions": {
+    "name": "Shandea Hardin",
+    "introDescription": "I hope this works",
+    "introImage": ""
+   }
+}
