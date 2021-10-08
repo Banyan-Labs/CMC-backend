@@ -7,15 +7,14 @@ module.exports = (app) => {
     });
   });
   app.post("/routes/api/months", async (req, res) => {
-        const newMonthPost = new NewMonthModel({
-          month: req.body.month,
-        });
-      
-        try {
-          const NewMonth = await newMonthPost.save();
-          res.status(201).json(NewMonth);
-        } catch (err) {
-          res.status(400).json({ message: err.message });
-        }
-      });
+    const newMonthPost = new NewMonthModel({
+      month: req.body.month,
+    });
+    try {
+      const NewMonth = await newMonthPost.save();
+      res.status(201).json(NewMonth);
+    } catch (err) {
+      res.status(400).json({ message: err.message });
+    }
+  });
 };

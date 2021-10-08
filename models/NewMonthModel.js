@@ -8,5 +8,4 @@ let NewMonthSchema = new Schema({
 });
 
 const NewMonthModel = mongoose.model("newmonth", NewMonthSchema);
-
 module.exports = NewMonthModel;

@@ -20,9 +20,8 @@ let MonthlyCallSchema = new Schema({
       trainingImage: String,
     },
   ],
-  otherNotes: String
+  otherNotes: String,
 });
 
 const MonthlyCallModel = mongoose.model("monthlyCall", MonthlyCallSchema);
-
 module.exports = MonthlyCallModel;

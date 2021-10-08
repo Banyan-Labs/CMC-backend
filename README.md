@@ -1,4 +1,4 @@
-# Company Monthly Calendar *-backend* `v1.0`
+# Company Monthly Calendar _-backend_ `v1.0`
 
 ## Table of Contents
 
@@ -71,6 +71,7 @@ Server will default to port `8080` - to change port create `.env` file and assig
 portal access at url: [`localhost:8080`](http://127.0.0.1:8080/)
 
 ### Deployed Development Access
+
 This application does have continuos deployment from main branch on Heroku
 
 url: https://banyan-cmc-backend.herokuapp.com/
