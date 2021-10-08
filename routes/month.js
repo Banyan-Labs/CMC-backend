@@ -1,21 +1,16 @@
 const MonthlyCallModel = require("../models/MonthlyCall");
 
 module.exports = (app) => {
-  //GET route to return ALL months
-app.get('/api/month', (req, res) => {
-  try {
-    MonthlyCallModel.find({}, (err, month) => {
-      res.status(201).json(month)
-    })
-  }catch (err){
-    res.status(500).json({ message: err.message})
-  }
-
-})
-  //POST route to add new month
+  app.get("/api/month", (req, res) => {
+    try {
+      MonthlyCallModel.find({}, (err, month) => {
+        res.status(201).json(month);
+      });
+    } catch (err) {
+      res.status(500).json({ message: err.message });
+    }
+  });
   app.post("/api/month", async (req, res) => {
-   
-
     const MonthlyCall = new MonthlyCallModel({
       month: req.body.month,
       year: req.body.year,
@@ -37,7 +32,6 @@ app.get('/api/month', (req, res) => {
       ],
       otherNotes: req.body.otherNotes,
     });
-
     try {
       const NewMonthlyCall = await MonthlyCall.save();
       res.status(201).json(NewMonthlyCall);

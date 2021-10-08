@@ -1,17 +1,21 @@
 const data = {
   month: "month",
   year: "year",
-  introductions: [{
-  name: "name",
-  introDescription: " introDescription",
-  introImage: "introImage",
-  }],
-  trainings: [{
-  trainingTitle: " trainingTitle",
-  presenter: " presenter",
-  trainingDescription: "trainingDescription",
-  role: "role",
-  }],
+  introductions: [
+    {
+      name: "name",
+      introDescription: " introDescription",
+      introImage: "introImage",
+    },
+  ],
+  trainings: [
+    {
+      trainingTitle: " trainingTitle",
+      presenter: " presenter",
+      trainingDescription: "trainingDescription",
+      role: "role",
+    },
+  ],
   otherNotes: "otherNotes",
 };
 axios
@@ -23,4 +27,3 @@ axios
   .catch((error) => {
     console.error("Something went wrong!", error);
   });
-
